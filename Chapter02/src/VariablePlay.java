@@ -5,7 +5,7 @@ public class VariablePlay {
         int x;
         int y = 56;
         x = 14;
-        System.out.println( + 10);
+        System.out.println(x + 10);
         
 
     }
