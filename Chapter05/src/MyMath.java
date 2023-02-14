@@ -7,5 +7,9 @@ public class MyMath {
         }
         return root;
     }
+    
+    public static void showTimesTable(int size) {
+        System.out.println("Times table of size " + size);
+    }
 
 }
