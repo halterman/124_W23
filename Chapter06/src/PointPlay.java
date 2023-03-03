@@ -7,15 +7,22 @@ public class PointPlay {
         
         p2 = new Point(0, 10);
         
-        //System.out.println("(" + p1.x + "," + p1.y + ")");
-        System.out.println("p1 = " + p1 + ", p2 = " + p2);
+        System.out.println(Point.f());
         
         
-        //System.out.println(Point.toString());
-        //System.out.println(p1);
-        
-        System.out.println("--------------------");
-        Point p3 = new Point(0, 0), p4 = new Point(0, 2);
-        System.out.println(MyMath.distance(p3, p4));
+        // What we really do in Java
+        double x = p1.distance(p2);
+//        
+//        
+//        //System.out.println("(" + p1.x + "," + p1.y + ")");
+//        System.out.println("p1 = " + p1 + ", p2 = " + p2);
+//        
+//        
+//        //System.out.println(Point.toString());
+//        //System.out.println(p1);
+//        
+//        System.out.println("--------------------");
+//        Point p3 = new Point(0, 0), p4 = new Point(0, 2);
+//        System.out.println(MyMath.distance(p3, p4));
     }
 }

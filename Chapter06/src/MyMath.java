@@ -51,5 +51,21 @@ public class MyMath {
                           + (point2.y - point1.y)*(point2.y - point1.y));
     }
     
+    /**
+     * Computes the greatest common divisor 
+     * (AKA greatest common factor) of a and b.
+     * @param a
+     * @param bm
+     * @return
+     */
+    public static int gcd(int a, int b) {
+        while (b != 0) {
+            int t = b;
+            b = a % b;
+            a = t;
+        }
+        return a;
+    }
+
 
 }

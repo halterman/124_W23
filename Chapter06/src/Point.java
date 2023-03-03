@@ -16,4 +16,13 @@ public class Point {
     public String toString() {
         return "(" + x + ", " + y + ")";
     }
+    
+    public double distance(Point other) {
+        return Math.sqrt((this.x - other.x)*(this.x - other.x) - (this.y - other.y)*(this.y - other.y));
+    }
+    
+    
+    public static double f() {
+        return 55.5;
+    }
 }
