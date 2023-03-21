@@ -2,7 +2,7 @@
 public class AddEm4 {
 
     public static void main(String[] args) {
-        final int NUMBER_OF_NUMBERS = 10;
+        final int NUMBER_OF_NUMBERS = 5;
         int sum = 0;
         var scan = new java.util.Scanner(System.in);
         System.out.print("Please enter " + NUMBER_OF_NUMBERS 
