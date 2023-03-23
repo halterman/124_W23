@@ -1,5 +1,5 @@
 
-public class PlorCurve {
+public class PlotCurve {
 
     public static void main(String[] args) {
         double[] numbers = new double[1000];
