@@ -40,5 +40,56 @@ class TestArrayRoutines {
         ArrayRoutines.sort(arr);
         assertArrayEquals(expected, arr);
     }
+    
+    @Test
+    void testSort_Null() {
+        int[] arr = null;
+        assertThrows(IllegalArgumentException.class, 
+                      () -> { ArrayRoutines.sort(arr); });
+    }
+    
+    @Test
+    void testMaximum_Three() {
+        int[] arr = {1, 2, 3};
+        assertEquals(3, ArrayRoutines.maximum(arr));
+    }
+    
+    @Test
+    void testMaximum_Three_A() {
+        int[] arr = {3, 2, 1};
+        assertEquals(3, ArrayRoutines.maximum(arr));
+    }
+    
+    @Test
+    void testMaximumThree_B() {
+        int[] arr = {2, 3, 1};
+        assertEquals(3, ArrayRoutines.maximum(arr));
+    }
+    
+    @Test
+    void testMaximumAllDups() {
+        int[] arr = {3, 3, 3};
+        assertEquals(3, ArrayRoutines.maximum(arr));
+    }
+    
+    @Test
+    void testMaximumNull() {
+        int[] arr = null;
+        assertThrows(IllegalArgumentException.class, 
+                      () -> { ArrayRoutines.maximum(arr); });
+    }
+    
+    @Test
+    void testMaximumAllNegatives() {
+        int[] arr = {-3, -13, -1};
+        assertEquals(-1, ArrayRoutines.maximum(arr));
+    }
+    
+    @Test
+    void testMaximumEmpty() {
+        int[] arr = {};
+        assertThrows(IllegalArgumentException.class, 
+                () -> { ArrayRoutines.maximum(arr); });
+    }
 
 }

@@ -19,6 +19,9 @@ public class ArrayRoutines {
      * @param a the array to sort.
      */
     public static void sort(int[] a) {
+        if (a == null) {
+            throw new IllegalArgumentException();
+        }
         for (int i = 0; i < a.length - 1; i++) {
             int smallest = i;
             for (int j = i + 1; j < a.length; j++) {
@@ -30,6 +33,19 @@ public class ArrayRoutines {
             a[i] = a[smallest];
             a[smallest] = temp;
         }
+    }
+    
+    public static int maximum(int[] a) {
+        if (a == null || a.length == 0) {
+            throw new IllegalArgumentException();
+        }
+        int max = a[0];
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] > max) {
+                max = a[i];
+            }
+        }
+        return max;
     }
     
     
