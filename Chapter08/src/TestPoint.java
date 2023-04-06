@@ -8,6 +8,13 @@ public class TestPoint {
             new Point(),
             new Point(),
             new SpecialPoint(),
+            // This is an instance of an anonymous inner class
+            new Point() { 
+                @Override
+                public String toString() {
+                    return "HA HA HA HA!";
+                }
+            },
             new Point(),
             new Point()
         };
