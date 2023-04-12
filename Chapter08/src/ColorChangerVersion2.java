@@ -4,8 +4,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 
-
-
 public class ColorChangerVersion2 extends GraphicalApplication {
 
     private Color currentColor;

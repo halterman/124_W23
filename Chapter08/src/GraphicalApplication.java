@@ -3,7 +3,6 @@ import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import java.awt.Dimension;
 
-@SuppressWarnings("serial")
 public class GraphicalApplication extends JPanel {
     // The text intended to be displayed in the parent window's title bar
     private String title;
