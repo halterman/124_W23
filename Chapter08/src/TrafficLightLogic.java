@@ -15,4 +15,8 @@ public class TrafficLightLogic {
             case Yellow -> Color.Red;
         };
     }
+    
+    public Color get() {
+        return currentColor;
+    }
 }
